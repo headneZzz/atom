@@ -1,0 +1,1 @@
+export const medicalStructureStorage = new webix.DataCollection();

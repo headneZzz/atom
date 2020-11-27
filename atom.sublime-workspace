@@ -1,0 +1,1159 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"clie",
+				"client_document_type"
+			],
+			[
+				"cash",
+				"cashbox"
+			],
+			[
+				"cr",
+				"cr_id"
+			],
+			[
+				"case_re",
+				"case_record_id"
+			],
+			[
+				"case",
+				"case_record_id"
+			],
+			[
+				"is_",
+				"is_need_treatment"
+			],
+			[
+				"man",
+				"manipulationGroup"
+			],
+			[
+				"ma",
+				"manipulation_group_id"
+			],
+			[
+				"is_aa",
+				"is_addable"
+			],
+			[
+				"new",
+				"newItem"
+			],
+			[
+				"manipulatin",
+				"manipulation_id"
+			],
+			[
+				"get_b",
+				"get_bool_as_string"
+			],
+			[
+				"stru",
+				"structure_id"
+			],
+			[
+				"str",
+				"structureId"
+			],
+			[
+				"structure",
+				"structure_valid"
+			],
+			[
+				"data",
+				"datatable"
+			],
+			[
+				"tre",
+				"treatment_day"
+			],
+			[
+				"se",
+				"setservice"
+			],
+			[
+				"get",
+				"getservice"
+			],
+			[
+				"treatm",
+				"treatmentDay"
+			],
+			[
+				"treatment",
+				"treatment_id"
+			],
+			[
+				"tooth",
+				"tooth_diagnoses_id"
+			],
+			[
+				"diag",
+				"diagnose"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"client_diag",
+				"client_diagnoses_id"
+			],
+			[
+				"client_",
+				"client_diagnoses_id"
+			],
+			[
+				"client",
+				"client_diag"
+			],
+			[
+				"add",
+				"addIcons"
+			],
+			[
+				"trea",
+				"treatment"
+			],
+			[
+				"clien",
+				"clientAccountStorage"
+			],
+			[
+				"sql",
+				"sql_options"
+			],
+			[
+				"commo",
+				"commonControlTreeStorage"
+			],
+			[
+				"ser",
+				"setservice"
+			],
+			[
+				"app_be",
+				"app_begin_time"
+			],
+			[
+				"stat",
+				"status_changed"
+			],
+			[
+				"refre",
+				"refreshDiag"
+			],
+			[
+				"mani",
+				"manipulation_price"
+			],
+			[
+				"caseR",
+				"caseRecordId"
+			],
+			[
+				"parent",
+				"parent_id"
+			],
+			[
+				"load",
+				"loadBranch"
+			],
+			[
+				"medi",
+				"medicament_choice"
+			],
+			[
+				"manipua",
+				"manipulation"
+			],
+			[
+				"check",
+				"checked"
+			],
+			[
+				"eve",
+				"callEvent"
+			],
+			[
+				"app_i",
+				"app_ins"
+			],
+			[
+				"change",
+				"changedApp"
+			],
+			[
+				"app",
+				"app_status_id"
+			],
+			[
+				"per",
+				"personell_id"
+			],
+			[
+				"day",
+				"dayScheduler"
+			],
+			[
+				"json",
+				"json_agg"
+			],
+			[
+				"mediact",
+				"medication_order"
+			],
+			[
+				"treatment_day",
+				"treatment_day_id"
+			],
+			[
+				"treat",
+				"treatment_day"
+			],
+			[
+				"treatment_day_",
+				"treatment_day_manipulation"
+			],
+			[
+				"paret",
+				"parentId"
+			],
+			[
+				"pare",
+				"parent_datatable"
+			],
+			[
+				"time",
+				"medication_time"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"mai",
+				"manipulation"
+			],
+			[
+				"tpl",
+				"tplan_manipulation_order-1"
+			],
+			[
+				"tplan",
+				"tplan_manipulation_order"
+			],
+			[
+				"tplan_tre",
+				"tplan_treatment_day"
+			],
+			[
+				"tplam_",
+				"tplan_manipulation_order"
+			],
+			[
+				"tplan_man",
+				"tplan_manipulation_order"
+			],
+			[
+				"tplan_mani",
+				"tplan_manipulation_id"
+			],
+			[
+				"tplan_",
+				"tplan_manipulation_order"
+			],
+			[
+				"tplan_tr",
+				"tplan_treatment_day_id"
+			],
+			[
+				"getSelecte",
+				"getSelectedId"
+			],
+			[
+				"key",
+				"key_value"
+			],
+			[
+				"is",
+				"is_checked"
+			],
+			[
+				"poli",
+				"policy_program_id"
+			],
+			[
+				"pr",
+				"policy_program_id"
+			],
+			[
+				"pa",
+				"parent_arr"
+			],
+			[
+				"le",
+				"levelId"
+			],
+			[
+				"pric",
+				"price_id"
+			],
+			[
+				"plan",
+				"plan_id"
+			],
+			[
+				"cl",
+				"client_id"
+			],
+			[
+				"pay",
+				"pay_no_cash"
+			],
+			[
+				"getse",
+				"getservice"
+			],
+			[
+				"clientA",
+				"clientAccountCombo"
+			],
+			[
+				"co",
+				"con"
+			],
+			[
+				"sum",
+				"sum_cash"
+			],
+			[
+				"update",
+				"updateItem"
+			],
+			[
+				"vi",
+				"view"
+			],
+			[
+				"each",
+				"eachChild"
+			],
+			[
+				"id",
+				"price_id"
+			],
+			[
+				"policy",
+				"policy_program"
+			],
+			[
+				"date",
+				"dateRange"
+			],
+			[
+				"back",
+				"background-size\tproperty"
+			],
+			[
+				"policy_",
+				"policy_program_id"
+			],
+			[
+				"structu",
+				"structureId"
+			],
+			[
+				"polic",
+				"policy_program_structure"
+			],
+			[
+				"price",
+				"priceTreeStorage"
+			],
+			[
+				"coun",
+				"counter"
+			],
+			[
+				"doc_",
+				"doc_formula"
+			],
+			[
+				"med",
+				"medicament_type"
+			],
+			[
+				"tpal",
+				"tplan_id"
+			],
+			[
+				"item",
+				"itemList"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"teat",
+				"treatment"
+			],
+			[
+				"personell",
+				"personell_id"
+			],
+			[
+				"pe",
+				"personell"
+			],
+			[
+				"pers",
+				"personell_id"
+			],
+			[
+				"struct",
+				"structure_id"
+			],
+			[
+				"cient",
+				"client_id"
+			],
+			[
+				"st",
+				"structureId"
+			],
+			[
+				"title",
+				"titleRow"
+			],
+			[
+				"sc",
+				"scaleTimeWidth"
+			],
+			[
+				"perso",
+				"personell"
+			],
+			[
+				"struc",
+				"structure"
+			],
+			[
+				"doc",
+				"doctorId"
+			],
+			[
+				"doctor",
+				"doctorId"
+			],
+			[
+				"work_be",
+				"work_begin_date"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"show",
+				"showApp"
+			],
+			[
+				"gr",
+				"gridHeight"
+			],
+			[
+				"sunDay",
+				"sundays"
+			],
+			[
+				"sca",
+				"scaleTimeWidth"
+			],
+			[
+				"fir",
+				"firstMondey"
+			],
+			[
+				"first",
+				"firstMonday"
+			],
+			[
+				"cur",
+				"curDate"
+			],
+			[
+				"ht",
+				"html"
+			],
+			[
+				"grid",
+				"gridWidth"
+			],
+			[
+				"tim",
+				"timeScaleHeight"
+			],
+			[
+				"sche",
+				"scheduleDay"
+			],
+			[
+				"cabi",
+				"cabinet_id"
+			],
+			[
+				"scale",
+				"scaleWorkTime"
+			],
+			[
+				"v",
+				"view"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/yrichs/www/settings/server/client_document.php",
+			"settings":
+			{
+				"buffer_size": 2808,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/yrichs/www/jet/sources/views/clients/persons.js",
+			"settings":
+			{
+				"buffer_size": 3600,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/yrichs/www/settings/sources/views/clientDocument/index.js",
+			"settings":
+			{
+				"buffer_size": 331,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 101.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"colorcode",
+				"Toggle Colorcode on this view"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			]
+		],
+		"width": 725.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/yrichs/www/settings/server",
+		"/home/yrichs/www/settings/sources",
+		"/home/yrichs/www/settings/sources/models",
+		"/home/yrichs/www/settings/sources/views",
+		"/home/yrichs/www/settings/sources/views/clientDocument",
+		"/home/yrichs/www/settings/sources/webix"
+	],
+	"file_history":
+	[
+		"/home/yrichs/www/atom/index.html",
+		"/home/yrichs/www/settings/sources/views/top.js",
+		"/home/yrichs/www/settings/sources/views/clientDocument/clientDocumentForm.js",
+		"/home/yrichs/www/settings/sources/views/clientDocument/clientDocumentList.js",
+		"/home/yrichs/www/settings/server/function.php",
+		"/home/yrichs/www/settings/sources/views/cashboxes/index.js",
+		"/home/yrichs/www/settings/sources/views/cashboxes/cashmanList.js",
+		"/home/yrichs/www/settings/sources/views/cashboxes/cashmanForm.js",
+		"/home/yrichs/www/settings/server/cashboxes.php",
+		"/home/yrichs/www/settings/sources/views/cashboxes/cashboxManList.js",
+		"/home/yrichs/www/settings/sources/views/clientDocument/index.js",
+		"/home/yrichs/www/settings/sources/views/clientDocuments/index.js",
+		"/home/yrichs/www/settings/sources/views/clientDocuments/clientDocumentsForm.js",
+		"/home/yrichs/www/settings/sources/models/clientDocumentsStorage.js",
+		"/home/yrichs/www/settings/sources/views/cashboxes/cashboxSelect.js",
+		"/home/yrichs/www/settings/sources/views/cashboxes/cashboxesForm.js",
+		"/home/yrichs/www/settings/sources/views/cashboxes/cashboxesList.js",
+		"/home/yrichs/www/settings/sources/models/cashmanStorage.js",
+		"/home/yrichs/www/settings/server/structure_settings.php",
+		"/home/yrichs/www/settings/sources/views/personellSettings/information.js",
+		"/home/yrichs/www/settings/sources/views/structureSettings/structureForm.js",
+		"/home/yrichs/www/settings/sources/models/cashboxesStorage.js",
+		"/home/yrichs/www/treatment/scripts/set_passwd.sql",
+		"/home/yrichs/www/jet/sources/views/top.js",
+		"/home/yrichs/www/settings/settings.sublime-project",
+		"/home/yrichs/www/jet/sources/views/clients/information.js",
+		"/home/yrichs/www/test/mdemo.html",
+		"/home/yrichs/www/jet/sources/views/clients/persons.js",
+		"/home/yrichs/www/test-mobile/sources/views/bay.js",
+		"/home/yrichs/www/test-mobile/sources/models/goodsSellStore.js",
+		"/home/yrichs/www/test-mobile/sources/styles/app.css",
+		"/home/yrichs/www/test-mobile/sources/views/sell.js",
+		"/home/yrichs/www/settings/server/show_me.json",
+		"/home/yrichs/www/optm/sources/myapp.js",
+		"/home/yrichs/www/test-mobile/sources/views/top.js",
+		"/home/yrichs/www/treatment/index.html",
+		"/home/yrichs/www/test-mobile/sources/models/measureStore.js",
+		"/home/yrichs/www/test/test.html",
+		"/home/yrichs/www/test-mobile/demos.html",
+		"/home/yrichs/www/test-mobile/sources/views/menu.js",
+		"/home/yrichs/www/test-mobile/sources/views/start.js",
+		"/home/yrichs/www/jet/sources/styles/app.css",
+		"/home/yrichs/www/jet/index.html",
+		"/home/yrichs/www/test-mobile/index.html",
+		"/home/yrichs/www/test-mobile/sources/myapp.js",
+		"/home/yrichs/www/optm/index.html",
+		"/home/yrichs/www/settings/sources/views/cashboxes/cashboxes.js",
+		"/home/yrichs/www/settings/scripts/set_passwd.sql",
+		"/home/yrichs/www/doctor/server/doctor/tplan.php",
+		"/home/yrichs/www/doctor/server/doctor/case.php",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientDiagPanel/models/statesStorage.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientDiagPanel/models/diagnosesStorage.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientDiagPanel/models/toothSurfaceStorage.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientDiagPanel/models/toothStorage.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientDiagPanel/models/toothStatesStorage.js",
+		"/home/yrichs/www/doctor/server/doctor/client_diag.php",
+		"/home/yrichs/www/doctor/print_form/medical_tplan.php",
+		"/home/yrichs/www/doctor/sources/views/doctor/tplan/tplanList.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientCase/clientCaseList.js",
+		"/home/yrichs/www/doctor/print_form/financial_tplan.php",
+		"/home/yrichs/www/doctor/print_form/case.php",
+		"/home/yrichs/www/doctor/sources/views/doctor/createCaseRecordForm/recordManipulationTree.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientCase/clientCasePartForm.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/createCaseRecordForm/index.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientDiagPanel/toothformula.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/oneDayScheduler.js",
+		"/home/yrichs/www/doctor/server/function.php",
+		"/home/yrichs/www/doctor/sources/helpers/state.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/tplan/tplanTree.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientDiagPanel/diagnosesTreatmentList.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/index.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/tplan/index.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/schedulerOneDay.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/clientInfoTemplate.js",
+		"/home/yrichs/www/doctor/sources/views/components/manipulationGSelectPopup/gManipulationCombo.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/manipulationAddPanel/manipulationCombo.js",
+		"/home/yrichs/www/doctor/sources/views/components/manipulationGSelectPopup/index.js",
+		"/home/yrichs/www/jet/sources/views/treatmentSettings/manipulationAddPopup/allManipulationCombo/index.js",
+		"/home/yrichs/www/doctor/sources/views/doctor/tplan/data.json",
+		"/home/yrichs/www/doctor/sources/views/components/manipulationGSelectPopup/manipulationGSelectForm.js",
+		"/home/yrichs/www/doctor/sources/views/common/casePartsSegmented.js",
+		"/home/yrichs/www/doctor/sources/views/user/structureChoice.js",
+		"/home/yrichs/www/doctor/sources/models/doctor/treatmentPlanTreeStorage.js",
+		"/home/yrichs/www/doctor/sources/views/components/manipulationAddPopup/manipulationAddForm.js",
+		"/home/yrichs/www/doctor/sources/views/components/manipulationAddPopup/gManipulationCombo.js",
+		"/home/yrichs/www/doctor/sources/models/doctor/manipulationGroupTreeStore.js",
+		"/home/yrichs/www/jet/scripts/set_passwd.sql",
+		"/home/yrichs/www/doctor/sources/views/top.js",
+		"/home/yrichs/www/doctor/doctor.sublime-project",
+		"/home/yrichs/www/jet/server/price.php",
+		"/home/yrichs/www/jet/sources/views/price/manipulationPriceTable.js",
+		"/home/yrichs/www/jet/sources/views/price/manipulationPriceToolbar.js",
+		"/home/yrichs/www/jet/sources/views/price/priceListToolbar.js",
+		"/home/yrichs/www/jet/sources/views/price/priceList.js",
+		"/home/yrichs/www/jet/sources/views/price/index.js",
+		"/home/yrichs/www/jet/sources/views/doctor/tplan/tplanTree.js",
+		"/home/yrichs/www/jet/sources/views/treatmentSettings/treatmentTree.js",
+		"/home/yrichs/www/jet/server/doctor/tplan.php",
+		"/home/yrichs/www/jet/server/treatment_settings/treatment.php",
+		"/home/yrichs/www/jet/sources/views/manipulationSettings/models/manipulationTreeStorage.js",
+		"/home/yrichs/www/jet/sources/views/doctor/tplan/tplanForm.js",
+		"/home/yrichs/www/jet/sources/views/scheduler/clientSearchCombo.js",
+		"/home/yrichs/www/jet/sources/views/treatmentSettings/models/treatmentTreeStorage.js",
+		"/home/yrichs/www/jet/sources/views/treatmentSettings/treatmentPopup/treatmentForm.js",
+		"/home/yrichs/www/jet/server/scheduler/client_treatment.php",
+		"/home/yrichs/www/jet/sources/views/doctor/manipulationAddPanel/manipulationCombo.js",
+		"/home/yrichs/www/jet/server/doctor/case.php",
+		"/home/yrichs/www/jet/server/doctor/client_diag.php",
+		"/home/yrichs/www/jet/sources/views/doctor/oneDayScheduler.js",
+		"/home/yrichs/www/jet/sources/views/doctor/createCaseRecordForm/models/casePartStorage.js",
+		"/home/yrichs/www/jet/server/doctor.php",
+		"/home/yrichs/www/jet/server/treatment_settings/medication_settings.php",
+		"/home/yrichs/www/jet/sources/views/medicationSettings/medicationTree.js",
+		"/home/yrichs/www/jet/sources/views/manipulationSettings/manipulationTree.js",
+		"/home/yrichs/www/jet/server/treatment_settings/manipulation_settings.php",
+		"/home/yrichs/www/jet/server/common.php.20200610",
+		"/home/yrichs/www/jet/sources/views/treatmentDayQuestion/treatmentTree.js",
+		"/home/yrichs/www/jet/server/common.php",
+		"/home/yrichs/www/jet/server/treatment_day_question.php",
+		"/home/yrichs/www/jet/sources/views/treatmentDayQuestion/index.js",
+		"/home/yrichs/www/jet/sources/views/treatmentDayQuestion/casePartsSelect.js",
+		"/home/yrichs/www/jet/sources/views/treatmentDayQuestion/questionToolbar.js",
+		"/home/yrichs/www/jet/sources/views/treatmentDayQuestion/questionSelectList.js",
+		"/home/yrichs/www/jet/sources/views/treatmentDayQuestion/questionList.js",
+		"/home/yrichs/www/jet/server/cabinets.php",
+		"/home/yrichs/www/jet/server/case_part.php",
+		"/home/yrichs/www/jet/sources/views/casePart/models/casePartStorage.js",
+		"/home/yrichs/www/jet/sources/views/casePart/casePartList.js"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 124.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"photo\":\"\"",
+			"},",
+			"},{",
+			"\",\"",
+			"is_active",
+			"client_document_type",
+			"cashbox",
+			"cashboxes",
+			"clientDocuments",
+			"client_documents",
+			"cashboxes",
+			"cashboxesStorage",
+			"cashboxes",
+			"cashboxesList",
+			"get_cashman_list",
+			"structure_id",
+			"item_id",
+			"casePartId",
+			"cashmanForm",
+			"data",
+			"cashmanForm",
+			"get_cashboxes_list",
+			"casePartsSelect",
+			"cashboxes",
+			"personell",
+			"cashboxesForm",
+			"personel",
+			"personell",
+			"cashboxes",
+			"cashboxesList",
+			"iphone_text",
+			"libs",
+			"nav",
+			"goodsSell",
+			"demo",
+			"sale",
+			"menu",
+			"sale",
+			"top:menu",
+			"data/photos/${obj.",
+			"persons_list",
+			"img",
+			"price",
+			"amount",
+			"'",
+			"id",
+			"casePart",
+			"is_treatment",
+			"serial_number",
+			"is_have_question",
+			"cashbox_name",
+			"cashboxes",
+			"case_part",
+			"e_part",
+			"casePart",
+			"SELECT cr.cr_id,",
+			"model.case_part_question_id",
+			"jet",
+			"id_list",
+			"app_id",
+			"getUnit",
+			"type",
+			"treatment_type",
+			"price[property]",
+			"obj.policy_program_id",
+			"this.view.",
+			"price",
+			"item",
+			"price",
+			"obj.policy_program_id",
+			"104",
+			"103",
+			"tplan_treatment",
+			"tplan_id",
+			"add_diag_to_tplan",
+			"response",
+			"clientDiagnosesStorage.add({",
+			"content",
+			"tplan_manipulation_order",
+			"tplan_treatment_day_order",
+			"order",
+			"true",
+			"manipulation_id",
+			"get_manipulation_group_tree",
+			"on_in_",
+			"get_manipulation_group_tree",
+			"group_t",
+			"$level < 3",
+			"!obj.is_required || obj.$level < 3",
+			"index",
+			"newItem",
+			"oldId",
+			"index",
+			"onB",
+			"re",
+			"newv",
+			"oldv",
+			"tplanTree",
+			"tpalnTree",
+			"tplanStorage",
+			"aja",
+			"manipulationGSelectForm",
+			"manipulationAdd",
+			"structureChoice",
+			"manipulationAdd",
+			"manipulationAddPopup",
+			"manipulationAddForm",
+			"allManipulationCombo",
+			"manipulationAddPopup",
+			"get_tplan_list",
+			"structurePriceTreeStorage",
+			"просмо",
+			"act_text",
+			"conf",
+			"policyProgramPanel",
+			"get_price_list",
+			"requestContent",
+			"get_price",
+			"_tree",
+			"get_manipulation_list",
+			"server/treatment_settings",
+			"et_manipulation_list",
+			"structure",
+			"to_create",
+			"category",
+			"t1",
+			"t1_id_seq",
+			"t1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"'),",
+			", '",
+			", ",
+			"', ",
+			"', '",
+			"('",
+			".",
+			"'),",
+			", '",
+			"',",
+			"','",
+			"('",
+			"",
+			"'),",
+			"','",
+			"('",
+			"",
+			"'),",
+			"', '",
+			"'",
+			"_complaints",
+			"'",
+			"terminal_bool",
+			"p_structure_id",
+			"terminal_bool",
+			"pterminal_bool",
+			"pPasswd",
+			"pLogin",
+			"p_passwd",
+			"p_login",
+			"personell",
+			"p_passwd",
+			"p_login",
+			"personell",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/yrichs/www/settings/server/client_document.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								789,
+								803
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "php",
+							"buffer_scroll_name": "84dbe90e",
+							"spell_check": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 589.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/yrichs/www/jet/sources/views/clients/persons.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2541,
+								2541
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "223aa35d",
+							"spell_check": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1311.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/yrichs/www/settings/sources/views/clientDocument/index.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								329,
+								329
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "76e779a7",
+							"spell_check": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 32.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "atom.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

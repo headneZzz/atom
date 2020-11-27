@@ -1,0 +1,446 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"deve",
+				"developmentsList"
+			],
+			[
+				"get",
+				"getservice"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "server/personell.php",
+			"settings":
+			{
+				"buffer_size": 6015,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sources/views/tViewer/index.js",
+			"settings":
+			{
+				"buffer_size": 1211,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sources/views/tabel/tabelTable.js",
+			"settings":
+			{
+				"buffer_size": 5638,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sources/views/tViewer/developmentsList.js",
+			"settings":
+			{
+				"buffer_size": 2636,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/yrichs/www/projecter",
+		"/home/yrichs/www/projecter/server",
+		"/home/yrichs/www/projecter/sources",
+		"/home/yrichs/www/projecter/sources/models",
+		"/home/yrichs/www/projecter/sources/views",
+		"/home/yrichs/www/projecter/sources/views/personell",
+		"/home/yrichs/www/projecter/sources/views/tabel",
+		"/home/yrichs/www/projecter/sources/views/tViewer",
+		"/home/yrichs/www/projecter/sources/views/user"
+	],
+	"file_history":
+	[
+		"/run/user/1000/gvfs/sftp:host=193.36.237.120,user=root/var/www/projecter/server/connect.php",
+		"/home/yrichs/www/projecter/sources/views/personell/roleSelect.js",
+		"/home/yrichs/www/jet/server/structure_settings.php",
+		"/home/yrichs/www/jet/sources/views/personellSettings/information.js",
+		"/home/yrichs/www/projecter/sources/views/personell/personellForm.js",
+		"/home/yrichs/www/jet/sources/webix/photo.js",
+		"/home/yrichs/www/jet/server/client.php",
+		"/home/yrichs/www/settings/server/cashboxes.php",
+		"/home/yrichs/www/jet/sources/views/structureSettings/formPanel.js",
+		"/home/yrichs/www/jet/sources/views/structureSettings/structureForm.js",
+		"/home/yrichs/www/projecter/sources/views/personell/personellList.js",
+		"/home/yrichs/www/projecter/sources/models/personellStorage.js",
+		"/home/yrichs/www/projecter/sources/models/roleStorage.js",
+		"/home/yrichs/www/projecter/sources/views/tViewer/index.js",
+		"/home/yrichs/www/projecter/sources/views/personell/index.js",
+		"/home/yrichs/www/projecter/server/personell.php",
+		"/home/yrichs/www/projecter/server/function.php",
+		"/home/yrichs/www/projecter/sources/views/mainMenu.js",
+		"/home/yrichs/www/projecter/sources/views/tabel/subjectSelect.js",
+		"/home/yrichs/www/projecter/server/tabel.php",
+		"/home/yrichs/www/projecter/server/login.php",
+		"/home/yrichs/www/projecter/sources/views/top.js",
+		"/home/yrichs/www/projecter/sources/models/session.js",
+		"/home/yrichs/www/projecter/sources/views/login.js",
+		"/home/yrichs/www/projecter/sources/models/personellModulesStorage.js",
+		"/home/yrichs/www/projecter/sources/views/exit.js",
+		"/home/yrichs/www/jet/server/login.php",
+		"/home/yrichs/www/projecter/sources/views/tabel/developmentsList.js",
+		"/home/yrichs/www/projecter/sources/views/tabel/devForm.js",
+		"/home/yrichs/www/projecter/sources/views/tabel/tabelTable.js",
+		"/home/yrichs/www/projecter/sources/views/tabel/index.js",
+		"/home/yrichs/www/projecter/sources/models/personellStructuresStorage.js",
+		"/home/yrichs/www/projecter/personell/personellList.js",
+		"/home/yrichs/www/projecter/personell/personellForm.js",
+		"/home/yrichs/www/projecter/connect.php",
+		"/home/yrichs/www/projecter/personell/index.js",
+		"/home/yrichs/www/projecter/sources/models/cashboxesStorage.js",
+		"/home/yrichs/www/projecter/sql/Scripts/projecter_db_create.sql",
+		"/home/yrichs/www/projecter/scripts/projecter2_backup.sql",
+		"/home/yrichs/www/projecter/scripts/projecter2_backup .sql",
+		"/run/user/1000/gvfs/google-drive:host=gmail.com,user=yrichs/Сигнал/логины",
+		"/home/yrichs/www/projecter/sources/views/tabel/monthSelectView.js"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"devForm",
+			"personellStorage",
+			"get_personell",
+			"get_role_list",
+			"roleList",
+			"personellList",
+			"personell",
+			"cashbox",
+			"cashboxes",
+			"get_cashboxes_list",
+			"ole.",
+			"role",
+			"cashboxes",
+			"rolees",
+			"cashbox",
+			"ubject",
+			"menu",
+			"clientSearchCombo",
+			"\"",
+			"cashboxes",
+			"roleForm",
+			"cashman",
+			"cashboxes",
+			"Котляренко",
+			"Канунцев",
+			"Стадников",
+			"Козлов",
+			"wait",
+			"Парамонов",
+			"Овсиенко",
+			"Гулик",
+			"Стадников",
+			"Иванов",
+			"Канунцев",
+			"Козлов",
+			"Сигнал-Ст",
+			"', md5('",
+			"', '",
+			"(1, '",
+			"filter",
+			"Selected",
+			"selected",
+			"id",
+			"tabelStorage",
+			"wait",
+			"date.",
+			"date",
+			"date.",
+			"date",
+			"this.date",
+			"this.month"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "server/personell.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2755,
+								2755
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "php",
+							"buffer_scroll_name": "8c3d87c2",
+							"spell_check": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 205.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "sources/views/tViewer/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1079,
+								1079
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "0dcc728e",
+							"spell_check": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sources/views/tabel/tabelTable.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								922,
+								922
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "b918928d",
+							"spell_check": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 321.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "sources/views/tViewer/developmentsList.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1534,
+								1534
+							]
+						],
+						"settings":
+						{
+							"bs_sintax": "javascript",
+							"buffer_scroll_name": "8756c74b",
+							"spell_check": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 512.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "projecter.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 270.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

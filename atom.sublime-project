@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/yrichs/www/atom"
+		}
+	],
+	"settings":
+	{
+		"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+		"font_size": 12,
+		"save_on_focus_lost": true,
+		"tab_size": 4
+	}
+}
