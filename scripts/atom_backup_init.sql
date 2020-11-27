@@ -2,8 +2,8 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 10.15 (Ubuntu 10.15-0ubuntu0.18.04.1)
--- Dumped by pg_dump version 10.15 (Ubuntu 10.15-0ubuntu0.18.04.1)
+-- Dumped from database version 10.10 (Ubuntu 10.10-0ubuntu0.18.04.1)
+-- Dumped by pg_dump version 10.10 (Ubuntu 10.10-0ubuntu0.18.04.1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -473,40 +473,6 @@ CREATE TABLE public.personell (
 ALTER TABLE public.personell OWNER TO atom;
 
 --
--- Name: personell_group; Type: TABLE; Schema: public; Owner: atom
---
-
-CREATE TABLE public.personell_group (
-    personell_group_id integer NOT NULL,
-    personell_group character varying(50)
-);
-
-
-ALTER TABLE public.personell_group OWNER TO atom;
-
---
--- Name: personell_group_personell_group_id_seq; Type: SEQUENCE; Schema: public; Owner: atom
---
-
-CREATE SEQUENCE public.personell_group_personell_group_id_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE public.personell_group_personell_group_id_seq OWNER TO atom;
-
---
--- Name: personell_group_personell_group_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: atom
---
-
-ALTER SEQUENCE public.personell_group_personell_group_id_seq OWNED BY public.personell_group.personell_group_id;
-
-
---
 -- Name: personell_personell_id_seq; Type: SEQUENCE; Schema: public; Owner: atom
 --
 
@@ -673,40 +639,6 @@ ALTER SEQUENCE public.subject_subject_id_seq OWNED BY public.subject.subject_id;
 
 
 --
--- Name: task_type; Type: TABLE; Schema: public; Owner: atom
---
-
-CREATE TABLE public.task_type (
-    task_type_id integer NOT NULL,
-    task_type character varying(50)
-);
-
-
-ALTER TABLE public.task_type OWNER TO atom;
-
---
--- Name: task_type_task_type_id_seq; Type: SEQUENCE; Schema: public; Owner: atom
---
-
-CREATE SEQUENCE public.task_type_task_type_id_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE public.task_type_task_type_id_seq OWNER TO atom;
-
---
--- Name: task_type_task_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: atom
---
-
-ALTER SEQUENCE public.task_type_task_type_id_seq OWNED BY public.task_type.task_type_id;
-
-
---
 -- Name: unit; Type: TABLE; Schema: public; Owner: atom
 --
 
@@ -718,9 +650,7 @@ CREATE TABLE public.unit (
     personell_id integer,
     terminal_bool boolean DEFAULT true,
     itr boolean,
-    active boolean DEFAULT false,
-    work_begin time without time zone,
-    work_end time without time zone
+    active boolean DEFAULT false
 );
 
 
@@ -869,13 +799,6 @@ ALTER TABLE ONLY public.personell ALTER COLUMN personell_id SET DEFAULT nextval(
 
 
 --
--- Name: personell_group personell_group_id; Type: DEFAULT; Schema: public; Owner: atom
---
-
-ALTER TABLE ONLY public.personell_group ALTER COLUMN personell_group_id SET DEFAULT nextval('public.personell_group_personell_group_id_seq'::regclass);
-
-
---
 -- Name: project project_id; Type: DEFAULT; Schema: public; Owner: atom
 --
 
@@ -901,13 +824,6 @@ ALTER TABLE ONLY public.specification ALTER COLUMN specification_id SET DEFAULT 
 --
 
 ALTER TABLE ONLY public.subject ALTER COLUMN subject_id SET DEFAULT nextval('public.subject_subject_id_seq'::regclass);
-
-
---
--- Name: task_type task_type_id; Type: DEFAULT; Schema: public; Owner: atom
---
-
-ALTER TABLE ONLY public.task_type ALTER COLUMN task_type_id SET DEFAULT nextval('public.task_type_task_type_id_seq'::regclass);
 
 
 --
@@ -1614,12 +1530,6 @@ COPY public.module_role (module_role_id, module_id, role_id) FROM stdin;
 6	2	3
 7	3	4
 8	3	2
-9	4	3
-10	4	2
-11	5	3
-12	5	2
-13	6	3
-14	6	2
 \.
 
 
@@ -1631,9 +1541,6 @@ COPY public.modules (module_id, module_name, module_file_name, module_title, mod
 1	tabel	tabel	табель	calendar-multiple-check
 2	personell	personell	персонал	account
 3	tViewer	tViewer	Табель	calendar-clock
-4	unitSettings	unitSettings	Предприятие	office-building
-5	tasker	tasker	Задачи	briefcase-check-outline
-6	dashboard	dashboard	Даш	monitor-dashboard
 \.
 
 
@@ -1642,6 +1549,12 @@ COPY public.modules (module_id, module_name, module_file_name, module_title, mod
 --
 
 COPY public.personell (personell_id, p_name, p_patronymic, p_surname, role_id, personell_id_barcode, p_login, p_passwd, male, create_date, update_date, birthday, create_personell_id, update_personell_id, address, email, photo, active) FROM stdin;
+2	Юрий	Федорович	Зайцев	2	\N	Юрий	202cb962ac59075b964b07152d234b70	t	2020-10-21 19:27:44.966315	\N	\N	\N	\N	\N	\N	\N	t
+3	Валерий	Юрьевич		1	\N	Валера	202cb962ac59075b964b07152d234b70	t	2020-10-21 19:27:44.966315	\N	\N	\N	\N	\N	\N	\N	t
+4	Виталий	Юрьевич	Куницын	1	\N	Виталий	202cb962ac59075b964b07152d234b70	t	2020-10-26 23:07:01.019096	\N	\N	\N	\N	\N	\N	\N	t
+7	Александр	Васильевич	Волков	1	\N	АВ	202cb962ac59075b964b07152d234b70	t	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N	\N	\N	t
+8	Василий	Васильевич	Собакин	1	\N	ВВ	202cb962ac59075b964b07152d234b70	t	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N	\N	\N	t
+9	Алексей	Григорьевич	Кулик	1	\N	АГ	202cb962ac59075b964b07152d234b70	t	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N	\N	\N	t
 10	Артём	Николаевич	Медведев	1	\N	АН	202cb962ac59075b964b07152d234b70	t	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N	\N	\N	t
 11	Владимир		Лисицын	1	\N	ВП	202cb962ac59075b964b07152d234b70	t	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N	\N	\N	t
 12	Игорь	Николаевич	Ежов	1	\N	ИНС	202cb962ac59075b964b07152d234b70	t	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N	\N	\N	t
@@ -1649,21 +1562,7 @@ COPY public.personell (personell_id, p_name, p_patronymic, p_surname, role_id, p
 14	Максим	Григорьевич	Гусев	1	\N	МГГ	202cb962ac59075b964b07152d234b70	t	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N	\N	\N	t
 15	Алексей	Алексеевич	Уткин	1	\N	ААП	202cb962ac59075b964b07152d234b70	t	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N	\N	\N	t
 16	Алексей		Котов	1	\N	АП	202cb962ac59075b964b07152d234b70	t	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N	\N	\N	t
-8	Василий	Васильевич	Собакин	1	\N	ВВ	202cb962ac59075b964b07152d234b70	f	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N		\N	f
-2	Юрий	Федорович	Зайцев	2	\N	Юрий	202cb962ac59075b964b07152d234b70	f	2020-10-21 19:27:44.966315	\N	\N	\N	\N	\N		6d2ef88ae55019109cd74168bad8a0cc_6ce57ba845b787cd4972a41d41a99631.jpg	t
-3	Валерий	Юрьевич		1	\N	Валера	202cb962ac59075b964b07152d234b70	f	2020-10-21 19:27:44.966315	\N	\N	\N	\N	\N		a19a838d0a12845d29b4aca98d45d8b6_5f323732d3a533e20fc80f7154f1d581.png	t
-4	Виталий	Юрьевич	Куницын	1	\N	Виталий	202cb962ac59075b964b07152d234b70	f	2020-10-26 23:07:01.019096	\N	\N	\N	\N	\N		05f6c5f2d1bc90b96a455dd1f5f42d1e_9506c267d66d0168797a3856e5339bae.jpg	t
-7	Александр	Васильевич	Волков	1	\N	АВ	202cb962ac59075b964b07152d234b70	f	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N		4c368ff71782ae50d7a4068205cfb6d8_fbb19a88594bb61ba8163f2e49c36c15.jpg	t
-9	Алексей	Григорьевич	Кулик	1	\N	АГ	202cb962ac59075b964b07152d234b70	f	2020-11-06 02:22:15.128661	\N	\N	\N	\N	\N		a327940631cdc4d71a399537aabfa354_0845578f63263b204f76ad60c100b61d.jpg	t
-1	Роман	Юрьевич	Зайцев	3	\N	Роман	202cb962ac59075b964b07152d234b70	f	2020-10-21 19:27:44.966315	\N	\N	\N	\N	\N		1eef08b19d3386178cc7e98574e13e80_ba492ebbb176ff9cb99754ab4e12cfbc.png	t
-\.
-
-
---
--- Data for Name: personell_group; Type: TABLE DATA; Schema: public; Owner: atom
---
-
-COPY public.personell_group (personell_group_id, personell_group) FROM stdin;
+1	Роман	Юрьевич	Зайцев	3	\N	Роман	202cb962ac59075b964b07152d234b70	t	2020-10-21 19:27:44.966315	\N	\N	\N	\N	\N	\N	\N	t
 \.
 
 
@@ -1686,9 +1585,9 @@ COPY public.project (project_id, project, subject_id, is_finished) FROM stdin;
 
 COPY public.roles (role_id, role_name, role_alias) FROM stdin;
 1	Сотрудник	\N
-2	Начальник цеха	\N
-3	Мастер участка	\N
-4	Заместитель начальника цеха	\N
+2	Руководитель	\N
+3	прораб	\N
+4	менеджер	\N
 \.
 
 
@@ -1745,32 +1644,14 @@ COPY public.subject (subject_id, subject, adress) FROM stdin;
 
 
 --
--- Data for Name: task_type; Type: TABLE DATA; Schema: public; Owner: atom
---
-
-COPY public.task_type (task_type_id, task_type) FROM stdin;
-1	Постоянные
-2	Внеплановые
-3	Информирование
-\.
-
-
---
 -- Data for Name: unit; Type: TABLE DATA; Schema: public; Owner: atom
 --
 
-COPY public.unit (unit_id, unit, post, p_unit_id, personell_id, terminal_bool, itr, active, work_begin, work_end) FROM stdin;
-1	ООО проВидец	Директор	\N	2	f	t	t	20:20:00	20:20:00
-2	Первый участок	Мастер участка	1	4	f	t	t	08:00:00	18:00:00
-6	Бригада электриков	Электрик	5	12	t	\N	t	09:00:00	18:00:00
-5	Бригада электриков	Бригадир	2	11	f	\N	t	07:00:00	16:00:00
-7	Бригада электриков	Электрик	5	13	t	\N	t	15:00:00	23:00:00
-3	ООО проВидец	Главный инженер	1	1	t	t	t	09:00:00	18:00:00
-4	ООО проВидец	Главный технолог	1	8	t	t	t	09:00:00	18:00:00
-8	Второй участок	Мастер участка	1	15	f	\N	t	09:00:00	18:00:00
-9	Первая бригада	Бригадир	8	16	f	\N	t	09:00:00	18:00:00
-10	Второй участок	Технолог	8	3	t	\N	t	09:00:00	18:00:00
-11	Первая бригада	Сборщик	9	14	t	\N	t	05:00:00	14:00:00
+COPY public.unit (unit_id, unit, post, p_unit_id, personell_id, terminal_bool, itr, active) FROM stdin;
+1	ООО проВидец	Директор	\N	2	t	t	t
+2	ООО проВидец	Прораб	1	4	t	t	t
+3	ООО проВидец	Инженер	1	1	t	t	t
+4	ООО проВидец	Водитель	1	3	t	t	t
 \.
 
 
@@ -1885,21 +1766,14 @@ SELECT pg_catalog.setval('public.measure_measure_id_seq', 10, true);
 -- Name: module_role_module_role_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
 --
 
-SELECT pg_catalog.setval('public.module_role_module_role_id_seq', 14, true);
+SELECT pg_catalog.setval('public.module_role_module_role_id_seq', 8, true);
 
 
 --
 -- Name: modules_module_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
 --
 
-SELECT pg_catalog.setval('public.modules_module_id_seq', 6, true);
-
-
---
--- Name: personell_group_personell_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
---
-
-SELECT pg_catalog.setval('public.personell_group_personell_group_id_seq', 1, false);
+SELECT pg_catalog.setval('public.modules_module_id_seq', 3, true);
 
 
 --
@@ -1938,17 +1812,10 @@ SELECT pg_catalog.setval('public.subject_subject_id_seq', 4, true);
 
 
 --
--- Name: task_type_task_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
---
-
-SELECT pg_catalog.setval('public.task_type_task_type_id_seq', 3, true);
-
-
---
 -- Name: unit_unit_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
 --
 
-SELECT pg_catalog.setval('public.unit_unit_id_seq', 11, true);
+SELECT pg_catalog.setval('public.unit_unit_id_seq', 4, true);
 
 
 --
@@ -2151,14 +2018,6 @@ ALTER TABLE ONLY public.modules
 
 
 --
--- Name: personell_group personell_group_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
---
-
-ALTER TABLE ONLY public.personell_group
-    ADD CONSTRAINT personell_group_pkey PRIMARY KEY (personell_group_id);
-
-
---
 -- Name: personell personell_p_login_key; Type: CONSTRAINT; Schema: public; Owner: atom
 --
 
@@ -2228,14 +2087,6 @@ ALTER TABLE ONLY public.subject
 
 ALTER TABLE ONLY public.subject
     ADD CONSTRAINT subject_subject_key UNIQUE (subject);
-
-
---
--- Name: task_type task_type_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
---
-
-ALTER TABLE ONLY public.task_type
-    ADD CONSTRAINT task_type_pkey PRIMARY KEY (task_type_id);
 
 
 --

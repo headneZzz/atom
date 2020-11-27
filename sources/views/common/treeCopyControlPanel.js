@@ -8,11 +8,11 @@ export default class treeCopyControlPanel extends JetView{
 					this.app.callEvent("createRoot:treeControlPanel");
 				}
 			},
-			{view:'icon', icon:'mdi mdi-content-copy', tooltip:'Скопировать манипуляцию',
+			/*{view:'icon', icon:'mdi mdi-content-copy', tooltip:'Скопировать манипуляцию',
 				click:()=>{
 					this.app.callEvent("copy:treeControlPanel");
 				}
-			},
+			},*/
 			{view:'icon', icon:'mdi mdi-plus', tooltip:'Новый подчиненный элемент',
 				click:()=>{
 					this.app.callEvent("createSlave:treeControlPanel");

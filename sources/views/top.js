@@ -1,6 +1,6 @@
 import {JetView, plugins} from "webix-jet";
 //import clinicChoice from "views/common/clinicChoice";
-//import toolbar from "views/user/toolbar";
+import toolbar from "views/user/toolbar";
 import mainMenu from "views/mainMenu";
 
 export default class TopView extends JetView{
@@ -10,7 +10,7 @@ export default class TopView extends JetView{
 
 		var ui = { //type:"clean", paddingX:5, css:"app_layout",
 			rows:[
-				//00000000000000000000000000000000000000000000000000000toolbar,
+				toolbar,
 				
 				{ cols:[
 				  mainMenu,
