@@ -16,7 +16,7 @@ $cmd = get_string('cmd',30);
 
 switch($cmd){
 	case 'get_task_tree':
-		get_subject($personell);
+		get_task_tree($personell);
 		break;
 	
 	case 'get_personell':
@@ -56,17 +56,32 @@ switch($cmd){
 }
 
 
-function get_subject($personell){
-	$sql = "SELECT subject_id AS id, subject AS value FROM subject;";
+function get_task_tree($personell){
+	$sql = "
+	SELECT author.p_surname||' '||author.p_name AS author_name, author.personell_id AS author_id,
+		author.photo AS photo,
+		task_type_id, priority_id, task_title, task, deadline_date,
+		task_answer.task_answer_id, answer, answer_date,
+		json_agg(task_answer_state.*) AS data
+	FROM task
+		INNER JOIN personell author ON (task.author_id = author.personell_id)
+		LEFT JOIN task_answer ON (task.task_id = task_answer.task_answer_id AND task.personell_id = 1)
+		LEFT JOIN task_answer_state ON (task_answer.task_answer_id = task_answer_state.task_answer_id)
+	GROUP BY task.task_id, task_answer.task_answer_id, author.personell_id;";
 	//echo $sql;
 	$result = pg_query($sql);
 	$nbrows = pg_num_rows($result);
-	if ($nbrows>0) {
-		while($rec = pg_fetch_array($result, NULL, PGSQL_ASSOC)) $arr[] = $rec;
-		echo json_encode($arr);
-	} else {
-		echo '[]';
-	}
+	if ($nbrows > 0) {
+		while($rec = pg_fetch_array($result, NULL, PGSQL_ASSOC)){
+			$rec['data'] = json_decode($rec['data']);
+			$arr[] = $rec;
+		}
+		$message = json_encode($arr);
+		$message = str_replace('[null]', '[]', $message);
+		//$message = str_replace('"t"', 'true', $message);
+		//$message = str_replace('"f"', 'false', $message);
+		echo $message;
+	} else echo "[]";
 }
 
 function get_personell($personell){

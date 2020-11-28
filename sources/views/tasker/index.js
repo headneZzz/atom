@@ -1,5 +1,6 @@
 import {JetView} from "webix-jet";
 
+import taskerToolbar from "views/tasker/taskerToolbar";
 import constantlyList from "views/tasker/constantlyList";
 import urgentlyList from "views/tasker/urgentlyList";
 import informingList from "views/tasker/informingList";
@@ -13,11 +14,20 @@ export default class tasker extends JetView{
 				taskerToolbar,
 				{
 					cols:[
-						constantlyList,
+						{rows:[
+							{view:'template', template: 'Постоянные', autoheight: true},
+							constantlyList
+						]},
 						{view:"resizer"},
-						urgentlyList,
+						{rows:[
+							{view:'template', template: 'Внеплановые', autoheight: true},
+							urgentlyList
+						]},
 						{view:"resizer"},
-						informingList
+						{rows:[
+							{view:'template', template: 'Информирование', autoheight: true},
+							informingList
+						]}
 					]
 				}
 			]

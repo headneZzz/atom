@@ -5,7 +5,13 @@ import {taskerTreeStorage} from "models/taskerTreeStorage";
 export default class urgentlyList extends JetView{
 	config(){
 		return {
-			view:"list"
+			view:"list",
+			//select:true,
+			type:{
+				template:'<image class="user_photo" src="data/photos/#photo#" /><div class="text"><span class="username">#task_title#</span><br>#author_name#<br>#task#</div>',
+				height:260
+			}
+
 		}
 	}
 
@@ -31,12 +37,17 @@ export default class urgentlyList extends JetView{
 
 	filter(){
 		this.getRoot().filter((obj) => {
-			return obj.message_type == 2;
+			//console.log("obj", obj);
+			return obj.task_type_id == 2;
 		});
 		taskerTreeStorage.setCursor(null);
 	}
 
 	clearFilter(){
-		
+		this.getRoot().filter((obj) => {
+			//console.log("obj", obj);
+			return obj.task_type_id == 2;
+		});
+		taskerTreeStorage.setCursor(null);	
 	}
 }
