@@ -338,6 +338,40 @@ ALTER SEQUENCE public.goods_goods_id_seq OWNED BY public.goods.goods_id;
 
 
 --
+-- Name: job_type; Type: TABLE; Schema: public; Owner: atom
+--
+
+CREATE TABLE public.job_type (
+    job_type_id integer NOT NULL,
+    job_type character varying(50)
+);
+
+
+ALTER TABLE public.job_type OWNER TO atom;
+
+--
+-- Name: job_type_job_type_id_seq; Type: SEQUENCE; Schema: public; Owner: atom
+--
+
+CREATE SEQUENCE public.job_type_job_type_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.job_type_job_type_id_seq OWNER TO atom;
+
+--
+-- Name: job_type_job_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: atom
+--
+
+ALTER SEQUENCE public.job_type_job_type_id_seq OWNED BY public.job_type.job_type_id;
+
+
+--
 -- Name: measure; Type: TABLE; Schema: public; Owner: atom
 --
 
@@ -529,6 +563,40 @@ ALTER SEQUENCE public.personell_personell_id_seq OWNED BY public.personell.perso
 
 
 --
+-- Name: priority; Type: TABLE; Schema: public; Owner: atom
+--
+
+CREATE TABLE public.priority (
+    priority_id integer NOT NULL,
+    priority character varying(50)
+);
+
+
+ALTER TABLE public.priority OWNER TO atom;
+
+--
+-- Name: priority_priority_id_seq; Type: SEQUENCE; Schema: public; Owner: atom
+--
+
+CREATE SEQUENCE public.priority_priority_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.priority_priority_id_seq OWNER TO atom;
+
+--
+-- Name: priority_priority_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: atom
+--
+
+ALTER SEQUENCE public.priority_priority_id_seq OWNED BY public.priority.priority_id;
+
+
+--
 -- Name: project; Type: TABLE; Schema: public; Owner: atom
 --
 
@@ -670,6 +738,155 @@ ALTER TABLE public.subject_subject_id_seq OWNER TO atom;
 --
 
 ALTER SEQUENCE public.subject_subject_id_seq OWNED BY public.subject.subject_id;
+
+
+--
+-- Name: task; Type: TABLE; Schema: public; Owner: atom
+--
+
+CREATE TABLE public.task (
+    task_id integer NOT NULL,
+    author_id integer,
+    personell_id integer,
+    personell_group_id integer,
+    task_type_id integer,
+    priority_id integer,
+    task_title character varying(200),
+    task character varying,
+    init_date timestamp without time zone DEFAULT now(),
+    deadline_date timestamp without time zone
+);
+
+
+ALTER TABLE public.task OWNER TO atom;
+
+--
+-- Name: task_answer; Type: TABLE; Schema: public; Owner: atom
+--
+
+CREATE TABLE public.task_answer (
+    task_answer_id integer NOT NULL,
+    task_id integer,
+    personell_id integer,
+    answer character varying,
+    answer_date timestamp without time zone
+);
+
+
+ALTER TABLE public.task_answer OWNER TO atom;
+
+--
+-- Name: task_answer_state; Type: TABLE; Schema: public; Owner: atom
+--
+
+CREATE TABLE public.task_answer_state (
+    task_answer_state_id integer NOT NULL,
+    task_answer_id integer,
+    task_state_id integer,
+    state_date timestamp without time zone DEFAULT now()
+);
+
+
+ALTER TABLE public.task_answer_state OWNER TO atom;
+
+--
+-- Name: task_answer_state_task_answer_state_id_seq; Type: SEQUENCE; Schema: public; Owner: atom
+--
+
+CREATE SEQUENCE public.task_answer_state_task_answer_state_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.task_answer_state_task_answer_state_id_seq OWNER TO atom;
+
+--
+-- Name: task_answer_state_task_answer_state_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: atom
+--
+
+ALTER SEQUENCE public.task_answer_state_task_answer_state_id_seq OWNED BY public.task_answer_state.task_answer_state_id;
+
+
+--
+-- Name: task_answer_task_answer_id_seq; Type: SEQUENCE; Schema: public; Owner: atom
+--
+
+CREATE SEQUENCE public.task_answer_task_answer_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.task_answer_task_answer_id_seq OWNER TO atom;
+
+--
+-- Name: task_answer_task_answer_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: atom
+--
+
+ALTER SEQUENCE public.task_answer_task_answer_id_seq OWNED BY public.task_answer.task_answer_id;
+
+
+--
+-- Name: task_state; Type: TABLE; Schema: public; Owner: atom
+--
+
+CREATE TABLE public.task_state (
+    task_state_id integer NOT NULL,
+    task_state character varying(50)
+);
+
+
+ALTER TABLE public.task_state OWNER TO atom;
+
+--
+-- Name: task_state_task_state_id_seq; Type: SEQUENCE; Schema: public; Owner: atom
+--
+
+CREATE SEQUENCE public.task_state_task_state_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.task_state_task_state_id_seq OWNER TO atom;
+
+--
+-- Name: task_state_task_state_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: atom
+--
+
+ALTER SEQUENCE public.task_state_task_state_id_seq OWNED BY public.task_state.task_state_id;
+
+
+--
+-- Name: task_task_id_seq; Type: SEQUENCE; Schema: public; Owner: atom
+--
+
+CREATE SEQUENCE public.task_task_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.task_task_id_seq OWNER TO atom;
+
+--
+-- Name: task_task_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: atom
+--
+
+ALTER SEQUENCE public.task_task_id_seq OWNED BY public.task.task_id;
 
 
 --
@@ -841,6 +1058,13 @@ ALTER TABLE ONLY public.goods ALTER COLUMN goods_id SET DEFAULT nextval('public.
 
 
 --
+-- Name: job_type job_type_id; Type: DEFAULT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.job_type ALTER COLUMN job_type_id SET DEFAULT nextval('public.job_type_job_type_id_seq'::regclass);
+
+
+--
 -- Name: measure measure_id; Type: DEFAULT; Schema: public; Owner: atom
 --
 
@@ -876,6 +1100,13 @@ ALTER TABLE ONLY public.personell_group ALTER COLUMN personell_group_id SET DEFA
 
 
 --
+-- Name: priority priority_id; Type: DEFAULT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.priority ALTER COLUMN priority_id SET DEFAULT nextval('public.priority_priority_id_seq'::regclass);
+
+
+--
 -- Name: project project_id; Type: DEFAULT; Schema: public; Owner: atom
 --
 
@@ -901,6 +1132,34 @@ ALTER TABLE ONLY public.specification ALTER COLUMN specification_id SET DEFAULT 
 --
 
 ALTER TABLE ONLY public.subject ALTER COLUMN subject_id SET DEFAULT nextval('public.subject_subject_id_seq'::regclass);
+
+
+--
+-- Name: task task_id; Type: DEFAULT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task ALTER COLUMN task_id SET DEFAULT nextval('public.task_task_id_seq'::regclass);
+
+
+--
+-- Name: task_answer task_answer_id; Type: DEFAULT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_answer ALTER COLUMN task_answer_id SET DEFAULT nextval('public.task_answer_task_answer_id_seq'::regclass);
+
+
+--
+-- Name: task_answer_state task_answer_state_id; Type: DEFAULT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_answer_state ALTER COLUMN task_answer_state_id SET DEFAULT nextval('public.task_answer_state_task_answer_state_id_seq'::regclass);
+
+
+--
+-- Name: task_state task_state_id; Type: DEFAULT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_state ALTER COLUMN task_state_id SET DEFAULT nextval('public.task_state_task_state_id_seq'::regclass);
 
 
 --
@@ -1588,6 +1847,17 @@ COPY public.goods (goods_id, goods, measure_id, art, code) FROM stdin;
 
 
 --
+-- Data for Name: job_type; Type: TABLE DATA; Schema: public; Owner: atom
+--
+
+COPY public.job_type (job_type_id, job_type) FROM stdin;
+1	Хозяйственная
+2	Административная
+3	Другая
+\.
+
+
+--
 -- Data for Name: measure; Type: TABLE DATA; Schema: public; Owner: atom
 --
 
@@ -1664,6 +1934,20 @@ COPY public.personell (personell_id, p_name, p_patronymic, p_surname, role_id, p
 --
 
 COPY public.personell_group (personell_group_id, personell_group) FROM stdin;
+1	Начальники участков
+2	Электрики
+3	Руководство
+\.
+
+
+--
+-- Data for Name: priority; Type: TABLE DATA; Schema: public; Owner: atom
+--
+
+COPY public.priority (priority_id, priority) FROM stdin;
+1	Срочно
+2	Обычно
+3	Низкий
 \.
 
 
@@ -1741,6 +2025,44 @@ COPY public.specification (specification_id, project_id, goods_id, is_ordered, i
 COPY public.subject (subject_id, subject, adress) FROM stdin;
 3	Шушенское	\N
 4	Нижневартовск	\N
+\.
+
+
+--
+-- Data for Name: task; Type: TABLE DATA; Schema: public; Owner: atom
+--
+
+COPY public.task (task_id, author_id, personell_id, personell_group_id, task_type_id, priority_id, task_title, task, init_date, deadline_date) FROM stdin;
+1	2	1	\N	1	1	делать срочно!!!	Надо надо надо подкачаться!	2020-11-28 03:26:29.500712	2020-11-30 09:00:00
+2	2	1	\N	2	1	Не надо	Не надо подкачаться	2020-11-28 03:27:39.747603	2020-12-01 12:00:00
+\.
+
+
+--
+-- Data for Name: task_answer; Type: TABLE DATA; Schema: public; Owner: atom
+--
+
+COPY public.task_answer (task_answer_id, task_id, personell_id, answer, answer_date) FROM stdin;
+\.
+
+
+--
+-- Data for Name: task_answer_state; Type: TABLE DATA; Schema: public; Owner: atom
+--
+
+COPY public.task_answer_state (task_answer_state_id, task_answer_id, task_state_id, state_date) FROM stdin;
+\.
+
+
+--
+-- Data for Name: task_state; Type: TABLE DATA; Schema: public; Owner: atom
+--
+
+COPY public.task_state (task_state_id, task_state) FROM stdin;
+1	Доставлено
+2	Прочитано
+3	В работе
+4	Выполнено
 \.
 
 
@@ -1875,6 +2197,13 @@ SELECT pg_catalog.setval('public.goods_goods_id_seq', 140, true);
 
 
 --
+-- Name: job_type_job_type_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
+--
+
+SELECT pg_catalog.setval('public.job_type_job_type_id_seq', 3, true);
+
+
+--
 -- Name: measure_measure_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
 --
 
@@ -1899,7 +2228,7 @@ SELECT pg_catalog.setval('public.modules_module_id_seq', 6, true);
 -- Name: personell_group_personell_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
 --
 
-SELECT pg_catalog.setval('public.personell_group_personell_group_id_seq', 1, false);
+SELECT pg_catalog.setval('public.personell_group_personell_group_id_seq', 3, true);
 
 
 --
@@ -1907,6 +2236,13 @@ SELECT pg_catalog.setval('public.personell_group_personell_group_id_seq', 1, fal
 --
 
 SELECT pg_catalog.setval('public.personell_personell_id_seq', 16, true);
+
+
+--
+-- Name: priority_priority_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
+--
+
+SELECT pg_catalog.setval('public.priority_priority_id_seq', 3, true);
 
 
 --
@@ -1935,6 +2271,34 @@ SELECT pg_catalog.setval('public.specification_specification_id_seq', 35, true);
 --
 
 SELECT pg_catalog.setval('public.subject_subject_id_seq', 4, true);
+
+
+--
+-- Name: task_answer_state_task_answer_state_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
+--
+
+SELECT pg_catalog.setval('public.task_answer_state_task_answer_state_id_seq', 1, false);
+
+
+--
+-- Name: task_answer_task_answer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
+--
+
+SELECT pg_catalog.setval('public.task_answer_task_answer_id_seq', 1, false);
+
+
+--
+-- Name: task_state_task_state_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
+--
+
+SELECT pg_catalog.setval('public.task_state_task_state_id_seq', 4, true);
+
+
+--
+-- Name: task_task_id_seq; Type: SEQUENCE SET; Schema: public; Owner: atom
+--
+
+SELECT pg_catalog.setval('public.task_task_id_seq', 2, true);
 
 
 --
@@ -2079,6 +2443,22 @@ ALTER TABLE ONLY public.goods
 
 
 --
+-- Name: job_type job_type_job_type_key; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.job_type
+    ADD CONSTRAINT job_type_job_type_key UNIQUE (job_type);
+
+
+--
+-- Name: job_type job_type_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.job_type
+    ADD CONSTRAINT job_type_pkey PRIMARY KEY (job_type_id);
+
+
+--
 -- Name: measure measure_measure_key; Type: CONSTRAINT; Schema: public; Owner: atom
 --
 
@@ -2151,6 +2531,14 @@ ALTER TABLE ONLY public.modules
 
 
 --
+-- Name: personell_group personell_group_personell_group_key; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.personell_group
+    ADD CONSTRAINT personell_group_personell_group_key UNIQUE (personell_group);
+
+
+--
 -- Name: personell_group personell_group_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
 --
 
@@ -2172,6 +2560,22 @@ ALTER TABLE ONLY public.personell
 
 ALTER TABLE ONLY public.personell
     ADD CONSTRAINT personell_pkey PRIMARY KEY (personell_id);
+
+
+--
+-- Name: priority priority_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.priority
+    ADD CONSTRAINT priority_pkey PRIMARY KEY (priority_id);
+
+
+--
+-- Name: priority priority_priority_key; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.priority
+    ADD CONSTRAINT priority_priority_key UNIQUE (priority);
 
 
 --
@@ -2231,11 +2635,59 @@ ALTER TABLE ONLY public.subject
 
 
 --
+-- Name: task_answer task_answer_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_answer
+    ADD CONSTRAINT task_answer_pkey PRIMARY KEY (task_answer_id);
+
+
+--
+-- Name: task_answer_state task_answer_state_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_answer_state
+    ADD CONSTRAINT task_answer_state_pkey PRIMARY KEY (task_answer_state_id);
+
+
+--
+-- Name: task task_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task
+    ADD CONSTRAINT task_pkey PRIMARY KEY (task_id);
+
+
+--
+-- Name: task_state task_state_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_state
+    ADD CONSTRAINT task_state_pkey PRIMARY KEY (task_state_id);
+
+
+--
+-- Name: task_state task_state_task_state_key; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_state
+    ADD CONSTRAINT task_state_task_state_key UNIQUE (task_state);
+
+
+--
 -- Name: task_type task_type_pkey; Type: CONSTRAINT; Schema: public; Owner: atom
 --
 
 ALTER TABLE ONLY public.task_type
     ADD CONSTRAINT task_type_pkey PRIMARY KEY (task_type_id);
+
+
+--
+-- Name: task_type task_type_task_type_key; Type: CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_type
+    ADD CONSTRAINT task_type_task_type_key UNIQUE (task_type);
 
 
 --
@@ -2412,6 +2864,78 @@ ALTER TABLE ONLY public.specification
 
 ALTER TABLE ONLY public.specification
     ADD CONSTRAINT specification_project_id_fkey FOREIGN KEY (project_id) REFERENCES public.project(project_id);
+
+
+--
+-- Name: task_answer task_answer_personell_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_answer
+    ADD CONSTRAINT task_answer_personell_id_fkey FOREIGN KEY (personell_id) REFERENCES public.personell(personell_id);
+
+
+--
+-- Name: task_answer_state task_answer_state_task_answer_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_answer_state
+    ADD CONSTRAINT task_answer_state_task_answer_id_fkey FOREIGN KEY (task_answer_id) REFERENCES public.task_answer(task_answer_id);
+
+
+--
+-- Name: task_answer_state task_answer_state_task_state_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_answer_state
+    ADD CONSTRAINT task_answer_state_task_state_id_fkey FOREIGN KEY (task_state_id) REFERENCES public.task_state(task_state_id);
+
+
+--
+-- Name: task_answer task_answer_task_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task_answer
+    ADD CONSTRAINT task_answer_task_id_fkey FOREIGN KEY (task_id) REFERENCES public.task(task_id);
+
+
+--
+-- Name: task task_author_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task
+    ADD CONSTRAINT task_author_id_fkey FOREIGN KEY (author_id) REFERENCES public.personell(personell_id);
+
+
+--
+-- Name: task task_personell_group_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task
+    ADD CONSTRAINT task_personell_group_id_fkey FOREIGN KEY (personell_group_id) REFERENCES public.personell_group(personell_group_id);
+
+
+--
+-- Name: task task_personell_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task
+    ADD CONSTRAINT task_personell_id_fkey FOREIGN KEY (personell_id) REFERENCES public.personell(personell_id);
+
+
+--
+-- Name: task task_priority_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task
+    ADD CONSTRAINT task_priority_id_fkey FOREIGN KEY (priority_id) REFERENCES public.priority(priority_id);
+
+
+--
+-- Name: task task_task_type_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: atom
+--
+
+ALTER TABLE ONLY public.task
+    ADD CONSTRAINT task_task_type_id_fkey FOREIGN KEY (task_type_id) REFERENCES public.task_type(task_type_id);
 
 
 --
